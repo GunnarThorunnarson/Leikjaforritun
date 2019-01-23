@@ -144,11 +144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 2023876516}
-  enemy: {fileID: 153412, guid: 548c56f4bcf4db24b8aa057e9846a005, type: 3}
-  spawnTime: 15
-  spawnPoints:
-  - {fileID: 933997770}
+  playerHealth: {fileID: 0}
+  enemy: {fileID: 0}
+  spawnTime: 3
+  spawnPoints: []
 --- !u!114 &14871710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,11 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 2023876516}
-  enemy: {fileID: 100000, guid: ea3c2728ef33e3a4d99527a86cda6465, type: 3}
+  playerHealth: {fileID: 0}
+  enemy: {fileID: 0}
   spawnTime: 3
-  spawnPoints:
-  - {fileID: 1725468539}
+  spawnPoints: []
 --- !u!114 &14871711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,11 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 2023876516}
-  enemy: {fileID: 100002, guid: e5171f72421770240bd7c3989fe351e3, type: 3}
+  playerHealth: {fileID: 0}
+  enemy: {fileID: 0}
   spawnTime: 3
-  spawnPoints:
-  - {fileID: 345275349}
+  spawnPoints: []
 --- !u!4 &14871712
 Transform:
   m_ObjectHideFlags: 0
@@ -505,8 +502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189bfb9c6772b6b4a87e12cd8b9af36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paused: {fileID: 24500000, guid: 5b84db49d40ea449aa4f3e3bd229ab5b, type: 2}
-  unpaused: {fileID: 24500003, guid: 5b84db49d40ea449aa4f3e3bd229ab5b, type: 2}
+  paused: {fileID: 0}
+  unpaused: {fileID: 0}
 --- !u!114 &244922612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,7 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ed055c6eb86c94ba753f5adfd3bf80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterMixer: {fileID: 24100000, guid: 5b84db49d40ea449aa4f3e3bd229ab5b, type: 2}
+  masterMixer: {fileID: 0}
 --- !u!1 &260284131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1329,22 @@ PrefabInstance:
     - target: {fileID: 495562, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589050, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
+      propertyPath: m_Size.z
+      value: 0.090514265
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589050, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
+      propertyPath: m_Center.x
+      value: 0.058257166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589050, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
+      propertyPath: m_Center.y
+      value: 0.43210986
+      objectReference: {fileID: 0}
+    - target: {fileID: 6589050, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
+      propertyPath: m_Center.z
+      value: -0.50696015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 149d6dcc67e8d1240bbc0dd6ddf0c1bd, type: 3}
@@ -2481,7 +2494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a210693e63307044a858d1787aacd62c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 2023876516}
+  playerHealth: {fileID: 0}
 --- !u!95 &1139190137
 Animator:
   serializedVersion: 3
@@ -3649,7 +3662,7 @@ Camera:
   m_GameObject: {fileID: 1851598977}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -3663,7 +3676,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 60
+  far clip plane: 65
   field of view: 70
   orthographic: 0
   orthographic size: 4.5
@@ -3708,7 +3721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bced140059b694e91f0e48210059c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2023876510}
+  target: {fileID: 0}
   smoothing: 5
 --- !u!114 &1851598984
 MonoBehaviour:
@@ -3977,15 +3990,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1641232233}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2023876516 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 11400004, guid: 4e5a0d387dc27394b81600988ad0216f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1641232233}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c32067ea884548644b13cf9baddd4573, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

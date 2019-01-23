@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 11
+  controlID: 58
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 947
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -122,10 +122,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 398}
-  m_MaxSize: {x: 18008, y: 14048}
+  m_MinSize: {x: 711, y: 398}
+  m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
-  controlID: 10
+  controlID: 57
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: 435
+    m_CachedPref: 369
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -308,14 +308,14 @@ MonoBehaviour:
     height: 611
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 80ddc09e37ae2ac4c99f7b1721a7ab7e
-  m_SceneLighting: 1
+  m_SceneLighting: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 34.72298, y: 14.417806, z: 6.775009}
+    m_Target: {x: -12.3534565, y: 15.83506, z: -24.17284}
     speed: 2
-    m_Value: {x: 34.72298, y: 14.417806, z: 6.775009}
+    m_Value: {x: -12.3534565, y: 15.83506, z: -24.17284}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -343,19 +343,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13806581, y: 0.7327687, z: -0.1561844, w: -0.6477609}
+    m_Target: {x: 0.2514584, y: 0.19267027, z: -0.051154632, w: 0.94711673}
     speed: 2
-    m_Value: {x: -0.13806583, y: 0.7327688, z: -0.15618442, w: -0.647761}
+    m_Value: {x: 0.2514584, y: 0.19267027, z: -0.051154632, w: 0.94711673}
   m_Size:
-    m_Target: 1.1867073
+    m_Target: 3.1856768
     speed: 2
-    m_Value: 1.1867073
+    m_Value: 3.1856768
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.002017937, y: 0.87694633, z: -0.48057014, w: -0.0036823382}
+  m_LastSceneViewRotation: {x: -0.07710228, y: 0.3519115, z: -0.029099993, w: -0.93239844}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -399,20 +399,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Complete-Game/Scripts/Player
+    - Assets/_Complete-Game/Mirror textures
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Complete-Game/Scripts/Player
+  - Assets/_Complete-Game/Mirror textures
   m_LastFoldersGridSize: -1
   m_LastProjectPath: H:\Leikjaforritun\FORR2GL05DU\Unity Tutorials\Survival Bissuleikur
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 9}
-    m_SelectedIDs: 32290000
-    m_LastClickedID: 10546
-    m_ExpandedIDs: 00000000f42700001a280000c0290000322b000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 0e380000
+    m_LastClickedID: 14350
+    m_ExpandedIDs: 00000000e6270000b2290000242b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8c360000
     m_LastClickedID: 13964
-    m_ExpandedIDs: 00000000f4270000
+    m_ExpandedIDs: 00000000e62700000c280000b2290000242b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -484,7 +484,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -524,9 +524,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2e95ffff2cfaffffd4fbffff862d0000
+      m_SelectedIDs: 6afbffff
+      m_LastClickedID: -1174
+      m_ExpandedIDs: 90c4ffff1afaffff54fbffff88fbffff90fbffff9afbffffc0fbffffc2fbffff442d0000962d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

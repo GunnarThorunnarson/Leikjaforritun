@@ -34,14 +34,14 @@ namespace CompleteProject
             // Store the input axes.
             float h = CrossPlatformInputManager.GetAxisRaw("Horizontal");
             float v = CrossPlatformInputManager.GetAxisRaw("Vertical");
-            float j = CrossPlatformInputManager.GetAxisRaw("Jump");
+            // float j = CrossPlatformInputManager.GetAxisRaw("Jump");
 
             // --- Debug ---
             // Debug.Log("h: " + h);
             // Debug.Log("v: " + v);
 
             // Move the player around the scene.
-            Move (h, v, j);
+            Move (h, v);
 
             // Turn the player to face the mouse cursor.
             Turning ();
@@ -51,17 +51,19 @@ namespace CompleteProject
         }
 
 
-        void Move (float h, float v, float j)
+        // void Move (float h, float v, float j)
+        void Move (float h, float v)
         {
             // Set the movement vector based on the axis input.
-            movement.Set (h, j, v);
+            // movement.Set (h, j, v);
+            movement.Set (h, 0f, v);
             
             // Normalise the movement vector and make it proportional to the speed per second.
             movement = movement.normalized * speed * Time.deltaTime;
 
             // --- Debug ---
-            snuningur = playerRigidbody.rotation;
-            Debug.Log("Snúningur: " + snuningur[1] + ", " + snuningur[3]);
+            // snuningur = playerRigidbody.rotation;
+            // Debug.Log("Snúningur: " + snuningur[1] + ", " + snuningur[3]);
 
             // Move the player to it's current position plus the movement.
             playerRigidbody.MovePosition (transform.position + movement);
