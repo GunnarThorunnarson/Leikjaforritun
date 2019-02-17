@@ -10,7 +10,6 @@ public class stigaTeljari : MonoBehaviour {
     private bool buid;
     private bool respawn;
 
-    public GameObject spilari;
     public GameObject byrjunarStaður;
     public Text stigaTextabox;
     public Text sigurTextabox;
@@ -36,14 +35,17 @@ public class stigaTeljari : MonoBehaviour {
         if (buid is false) {
             tímaTextabox.text = tímaTexti + System.Math.Round(Time.timeSinceLevelLoad,2).ToString();
         }
+        if (Input.GetButtonDown("Restart") == true) {
+            SceneManager.LoadScene (SceneManager.GetActiveScene().name);//Þetta byrjar levelið upp á nýtt
+        }
     }
     void FixedUpdate() {
-        if (respawn is true){//Þetta sendir spilarann á upphafstaðinn ef hann lendir í sjónum
+        if (respawn is true){//Þetta sendir spilarann á upphafstaðinn ef hann lendir í sjónum og þetta virkaði bara í fixedUpdate vegna þess að annars færði firstPersonControllerin spilarann til baka
             transform.position = byrjunarStaður.transform.position;
             respawn = false;
             if (buid is false) {// Þetta passar að maður tapi ekki hversu langt maður er kominn ef maður er búinn að vinna
                 sigurTextabox.text = tapTexti;
-                SceneManager.LoadScene (SceneManager.GetActiveScene ().name);//Þetta byrjar levelið upp á nýtt
+                SceneManager.LoadScene (SceneManager.GetActiveScene().name);//Þetta byrjar levelið upp á nýtt
             }
         }
     }
@@ -53,7 +55,7 @@ public class stigaTeljari : MonoBehaviour {
             hlutur.gameObject.SetActive(false);
             stig += 1;
             UppfæraStigaTexta();
-            if (stig >= 10) {
+            if (stig >= fjoldiMarkmiða) {
                 sigurTextabox.text = sigurTexti;
                 buid = true;
             }
